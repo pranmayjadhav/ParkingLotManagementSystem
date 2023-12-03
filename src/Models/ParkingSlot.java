@@ -26,7 +26,7 @@ public class ParkingSlot extends BaseModel{
     }
 
     public VehicleType getVehicleTypes() {
-        return vehicleTypes;
+        return vehicleType;
     }
 
     public void setVehicleTypes(VehicleType vehicleTypes) {

@@ -7,6 +7,13 @@ import java.util.List;
 
 public class ParkingLot extends BaseModel{
     private String address;
+    private List<ParkingFloor> parkingFloors;
+    private List<Gate> gates;
+
+    private List<VehicleType> allowedVehicleTypes;
+
+    private ParkingLotStatus parkingLotStatus;
+
 
     public String getAddress() {
         return address;
@@ -48,11 +55,5 @@ public class ParkingLot extends BaseModel{
         this.parkingLotStatus = parkingLotStatus;
     }
 
-    private List<ParkingFloor> parkingFloors;
-    private List<Gate> gates;
-
-    private List<VehicleType> allowedVehicleTypes;
-
-    private ParkingLotStatus parkingLotStatus;
 
 }

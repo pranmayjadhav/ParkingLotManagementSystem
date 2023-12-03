@@ -1,5 +1,7 @@
 package Models.ENUMs;
 
 public enum GateStatus {
-    RESTRICTED
+    OPEN,
+    CLOSED,
+    RESTRICTED_ENTRY
 }

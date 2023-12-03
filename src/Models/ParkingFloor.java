@@ -8,6 +8,8 @@ import java.util.List;
 public class ParkingFloor extends BaseModel{
     private int floorNumber;
     private List<ParkingSlot> parkingSlotList;
+    private List<VehicleType> allowedVehicleTypes;
+    private ParkingFloorStatus parkingFloorStatus;
 
     public int getFloorNumber() {
         return floorNumber;
@@ -41,7 +43,6 @@ public class ParkingFloor extends BaseModel{
         this.parkingFloorStatus = parkingFloorStatus;
     }
 
-    private List<VehicleType> allowedVehicleTypes;
-    private ParkingFloorStatus parkingFloorStatus;
+
 
 }

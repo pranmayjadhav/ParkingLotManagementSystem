@@ -1,12 +1,13 @@
 package Models;
 
 import Models.ENUMs.GateStatus;
+import Models.ENUMs.GateType;
 import Models.ENUMs.VehicleType;
 
 public class Gate extends BaseModel{
     private int gateNumber;
     private Operator currentOperator;
-    private VehicleType.GateTypes gateTypes;
+    private GateType gateTypes;
     private GateStatus gateStatus;
 
     public int getGateNumber() {
@@ -25,11 +26,11 @@ public class Gate extends BaseModel{
         this.currentOperator = currentOperator;
     }
 
-    public VehicleType.GateTypes getGateTypes() {
+    public GateType getGateTypes() {
         return gateTypes;
     }
 
-    public void setGateTypes(VehicleType.GateTypes gateTypes) {
+    public void setGateTypes(GateType gateTypes) {
         this.gateTypes = gateTypes;
     }
 

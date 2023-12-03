@@ -7,6 +7,8 @@ public class Ticket extends BaseModel{
     private Date entryTime;
     private Vehicle vehicle;
     private ParkingSlot parkingSlot;
+    private Gate gate;
+    private Operator generatedBy;
 
     public String getNumber() {
         return number;
@@ -56,7 +58,6 @@ public class Ticket extends BaseModel{
         this.generatedBy = generatedBy;
     }
 
-    private Gate gate;
-    private Operator generatedBy;
+
 
 }

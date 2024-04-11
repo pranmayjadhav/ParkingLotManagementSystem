@@ -10,10 +10,10 @@ public class Payment extends BaseModel{
     private Bill bill;
     private int refID;
 
+
     public int getAmount() {
         return amount;
     }
-
     public void setAmount(int amount) {
         this.amount = amount;
     }
@@ -21,7 +21,6 @@ public class Payment extends BaseModel{
     public PaymentMode getPaymentMode() {
         return paymentMode;
     }
-
     public void setPaymentMode(PaymentMode paymentMode) {
         this.paymentMode = paymentMode;
     }
@@ -29,7 +28,6 @@ public class Payment extends BaseModel{
     public PaymentStatus getPaymentStatus() {
         return paymentStatus;
     }
-
     public void setPaymentStatus(PaymentStatus paymentStatus) {
         this.paymentStatus = paymentStatus;
     }
@@ -37,7 +35,6 @@ public class Payment extends BaseModel{
     public Bill getBill() {
         return bill;
     }
-
     public void setBill(Bill bill) {
         this.bill = bill;
     }
@@ -45,7 +42,6 @@ public class Payment extends BaseModel{
     public int getRefID() {
         return refID;
     }
-
     public void setRefID(int refID) {
         this.refID = refID;
     }

@@ -7,7 +7,6 @@ public class Operator extends BaseModel{
     public String getEmpId() {
         return empId;
     }
-
     public void setEmpId(String empId) {
         this.empId = empId;
     }
@@ -15,7 +14,6 @@ public class Operator extends BaseModel{
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }

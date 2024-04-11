@@ -2,13 +2,12 @@ package ParkingLot.service;
 
 import Models.ParkingSlot;
 import Models.SlotAssignmentStrategyType;
-import ParkingLot.Exceptions.GateNotFoundException;
-import ParkingLot.models.*;
-import ParkingLot.repositories.GateRepository;
-import ParkingLot.repositories.ParkingLotRepository;
-import ParkingLot.repositories.TicketRepository;
-import ParkingLot.repositories.VehicleRepository;
-import ParkingLot.strategies.SlotAssignmentStrategyFactory;
+import Models.*;
+import Models.ENUMs.*;
+import Repositories.*;
+import Strategies.SlotAssignmentStrategyFactory;
+import exceptions.GateNotFoundException;
+
 
 import java.util.Date;
 import java.util.Optional;
@@ -31,8 +30,8 @@ public class TicketService {
     public Ticket issueTicket(
             String vehicleNumber,
             String vehicleOwnerName,
-            VehicleTypes vehicleType,
-            Long gateId){
+            VehicleType vehicleType,
+            Long gateId) throws GateNotFoundException {
         // 1. Create a Ticket obj
         // 2. Assign a spot
         // 3. return the ticket

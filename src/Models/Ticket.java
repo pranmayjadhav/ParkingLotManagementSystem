@@ -7,13 +7,13 @@ public class Ticket extends BaseModel{
     private Date entryTime;
     private Vehicle vehicle;
     private ParkingSlot parkingSlot;
-    private Gate gate;
+    private Gate generatedAt;
     private Operator generatedBy;
+
 
     public String getNumber() {
         return number;
     }
-
     public void setNumber(String number) {
         this.number = number;
     }
@@ -21,7 +21,6 @@ public class Ticket extends BaseModel{
     public Date getEntryTime() {
         return entryTime;
     }
-
     public void setEntryTime(Date entryTime) {
         this.entryTime = entryTime;
     }
@@ -29,7 +28,6 @@ public class Ticket extends BaseModel{
     public Vehicle getVehicle() {
         return vehicle;
     }
-
     public void setVehicle(Vehicle vehicle) {
         this.vehicle = vehicle;
     }
@@ -37,23 +35,20 @@ public class Ticket extends BaseModel{
     public ParkingSlot getParkingSlot() {
         return parkingSlot;
     }
-
     public void setParkingSlot(ParkingSlot parkingSlot) {
         this.parkingSlot = parkingSlot;
     }
 
-    public Gate getGate() {
-        return gate;
+    public Gate getGeneratedAt() {
+        return generatedAt;
     }
-
-    public void setGate(Gate gate) {
-        this.gate = gate;
+    public void setGeneratedAt(Gate generatedAt) {
+        this.generatedAt = generatedAt;
     }
 
     public Operator getGeneratedBy() {
         return generatedBy;
     }
-
     public void setGeneratedBy(Operator generatedBy) {
         this.generatedBy = generatedBy;
     }

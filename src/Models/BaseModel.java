@@ -11,8 +11,8 @@ public class BaseModel {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(long id) {
+        this.id = (int) id;
     }
 
     public Date getCreatedDateAt() {

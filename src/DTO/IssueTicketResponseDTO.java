@@ -10,7 +10,6 @@ public class IssueTicketResponseDTO {
     public Ticket getTicket() {
         return ticket;
     }
-
     public void setTicket(Ticket ticket) {
         this.ticket = ticket;
     }
@@ -18,7 +17,6 @@ public class IssueTicketResponseDTO {
     public ResponseType getResponseStatus() {
         return responseStatus;
     }
-
     public void setResponseStatus(ResponseType responseStatus) {
         this.responseStatus = responseStatus;
     }
@@ -26,7 +24,6 @@ public class IssueTicketResponseDTO {
     public String getFailureMessage() {
         return failureMessage;
     }
-
     public void setFailureMessage(String failureMessage) {
         this.failureMessage = failureMessage;
     }
